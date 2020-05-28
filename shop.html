@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/style/owl.carousel.css">
+    <link rel="stylesheet" href="/style/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="/js/owl.carousel.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha256-KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Shop</title>
+</head>
+
+<body>
+    <div class="container-fluid cart">
+
+        <header>
+            <div class="top-menu">
+
+                <div class="top-social-media-container">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-snapchat-s"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="top-bar-1 d-none d-lg-block">
+                    <span>Free shipping for standard order over $100</span>
+                </div>
+
+                <div class="top-bar-2 mr-5">
+                    <span>fashe@example.com</span>
+                    <select>
+                        <option>USD</option>
+                        <option>EUR</option>
+                    </select>
+                </div>
+
+            </div>
+        </header>
+        <div class="bottom-menu container-fluid">
+            <div class="row">
+                <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                    <img class="ml-5" src="/assets/logo.webp" alt="Logo Image">
+                </div>
+
+                <div class="col-md-8">
+                    <nav>
+                        <ul class="main-ul">
+                            <li class="ul-holder">
+                                <a class="home" href="/index.html">Home</a>
+                                <ul class="sub-menu d-none">
+                                    <li>Homepage V1</li>
+                                    <li>Homepage V2</li>
+                                    <li>Homepage V3</li>
+                                </ul>
+                            </li>
+                            <li><a href="/shop.html">Shop</a></li>
+                            <li><a href="/shop.html">Sale</a></li>
+                            <li><a href="/cart.html">Features</a></li>
+                            <li><a href="/blog.html">Blog</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="bottom-3 col-md-2">
+                    <ul>
+                        <li><img src="/assets/icon-header-01.webp" alt="account"></li>
+                        <li> <img src="/assets/icon-header-02.webp" alt="bucket"></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+        <section class="about container-fluid">
+            <img src="/assets/shop/heading-pages-02.jpg" alt="heading-photo">
+            <h1>WOMEN</h1>
+        </section>
+
+        <main class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="left-side-shop col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                        <div class="categories-shop">
+                            <h4>Categories</h4>
+                            <ul>
+                                <li><a href="#">All</a></li>
+                                <li><a href="#">Women</a></li>
+                                <li><a href="#">Men</a></li>
+                                <li><a href="#">Kids</a></li>
+                                <li><a href="#">Accesories</a></li>
+                            </ul>
+                        </div>
+                        <div class="filters">
+                            <h3>Filters</h3>
+                            <hr>
+                            <div id="slider-range"></div>
+                            <p>
+                                <label for="amount">Range:</label>
+                                <input type="text" id="amount" readonly
+                                    style="border:0; color:#f6931f; font-weight:bold;">
+                                <br><button>Filter</button>
+                                <hr>
+                            </p>
+
+                        </div>
+                        <div class="color">
+                            <h3>Color</h3>
+                            <ul>
+                                <li id="c1">.</li>
+                                <li id="c2"></li>
+                                <li id="c3"></li>
+                                <li id="c4"></li>
+                                <li id="c5"></li>
+                                <li id="c6"></li>
+                                <li id="c7"></li>
+                            </ul>
+                        </div>
+                        <div class="mt-5 search-box">
+                            <input type="search" placeholder="Searcg Products...">
+                        </div>
+                    </div>
+                    <div class="right-side-shop col-xs-12 col-sm-8 col-md-10 col-lg-10">
+                        <header>
+                            <select class="select-1">
+                                <option>Default Sorting</option>
+                                <option>Popularity</option>
+                                <option>Price: low to high</option>
+                                <option>Price: hight to low</option>
+                            </select>
+                            <select class="select-2">
+                                <option>Price</option>
+                                <option>$0.00-$50.00</option>
+                                <option>$50.00-$100.00</option>
+                                <option>$100.00-$150.00</option>
+                                <option>$150.00-$200.00</option>
+                                <option>$200.00+</option>
+                            </select>
+                            <div>
+                                <span>Showing 1-12 of 16 results</span>
+                            </div>
+                        </header>
+
+                        <section class="mt-5 products">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-12 col-md-4" id="11">
+                                        <div class="parent">
+                                            <img src="/assets/banner.webp" alt="bag">
+                                            <button class="btn btn-dark">ADD TO CARD</button>
+                                        </div>
+                                        <a>Herschel supply co 25l</a>
+                                        <p>$35.00</p>
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 col-md-4" id="12">
+                                        <div class="parent">
+                                            <img src="/assets/girl.jpg" alt="girls">
+                                            <button class="btn btn-dark">ADD TO CARD</button>
+                                        </div>
+
+                                        <a>Denim Jacked Blue</a>
+                                        <p>$75.00</p>
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 col-md-4" id="13">
+                                        <div class="parent">
+                                            <img src="/assets/watch_card.JPG" alt="girls">
+                                            <button class="btn btn-dark">ADD TO CARD</button>
+                                        </div>
+
+                                        <a>Denim Jacked Blue</a>
+                                        <p>$75.00</p>
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 col-md-4" id="14">
+                                        <div class="parent">
+                                            <img src="/assets/short.jpg" alt="watch">
+                                            <button class="btn btn-dark">ADD TO CARD</button>
+                                        </div>
+
+                                        <a>Coach Slim Easton Black</a>
+                                        <p>$165.00</p>
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 col-md-4" id="15">
+                                        <div class="parent">
+                                            <img src="/assets/banner-04.jpg" alt="short">
+                                            <button class="btn btn-dark">ADD TO CARD</button>
+                                        </div>
+                                        <a>Frayed Denim Shorts</a>
+                                        <s>25.90</s>
+                                        <p>$15.99</p>
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 col-md-4" id="16">
+                                        <div class="parent">
+                                            <img src="/assets/home2/item-14.webp" alt="bag">
+                                            <button class="btn btn-dark">ADD TO CARD</button>
+                                        </div>
+                                        <a>Herschel supply co 25l</a>
+                                        <p>$75.00</p>
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 col-md-4" id="17">
+                                        <div class="parent">
+                                            <img src="/assets/home2/item-06.webp" alt="bag">
+                                            <button class="btn btn-dark">ADD TO CARD</button>
+                                        </div>
+                                        <a>Herschel supply co 25l</a>
+                                        <p>$75.00</p>
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 col-md-4" id="18">
+                                        <div class="parent">
+                                            <img src="/assets/home2/item-08.jpg" alt="bag">
+                                            <button class="btn btn-dark">ADD TO CARD</button>
+                                        </div>
+                                        <a>Herschel supply co 25l</a>
+                                        <p>$75.00</p>
+                                    </div>
+
+                                    <div class="col-sm-6 col-xs-12 col-md-4" id="19">
+                                        <div class="parent">
+                                            <img src="/assets/home2/item-10.webp" alt="bag">
+                                            <button class="btn btn-dark">ADD TO CARD</button>
+                                        </div>
+                                        <a>Herschel supply co 25l</a>
+                                        <p>$75.00</p>
+                                    </div>
+
+                                    <div class="mt-5 pagination">
+                                        <nav>
+                                            <ul>
+                                                <li><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                    </div>
+
+                    </section>
+                </div>
+            </div>
+    </div>
+    </main>
+
+    <footer>
+        <!-- Footer -->
+        <footer class="page-footer font-small stylish-color-dark pt-4">
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 mx-auto">
+
+                        <!-- Content -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">GET IN TOUCH</h5>
+                        <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or
+                            call us on (+1) 96 716 6879</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CATEGORIES</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Men</a>
+                            </li>
+                            <li>
+                                <a href="#!">Women</a>
+                            </li>
+                            <li>
+                                <a href="#!">Dresses</a>
+                            </li>
+                            <li>
+                                <a href="#!">Sunglasses</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">LINKS</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Search</a>
+                            </li>
+                            <li>
+                                <a href="#!">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#!">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#!">Return</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">HELP</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!">Track Order</a>
+                            </li>
+                            <li>
+                                <a href="#!">Returns</a>
+                            </li>
+                            <li>
+                                <a href="#!">Shipping</a>
+                            </li>
+                            <li>
+                                <a href="#!">FAQs</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-md-2 mx-auto">
+
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">NEWSLETTER</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <input type="email" placeholder="email@example.com">
+                            </li>
+                            <li>
+                                <button class="btn btn-dark">SUBSCRIBE</button>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Social buttons -->
+            <ul class=" mt-5 list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1">
+                        <img src="/assets/cards/paypal.png" alt="paypal">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1">
+                        <img src="/assets/cards/visa.png" alt="">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-gplus mx-1">
+                        <img src="/assets/cards/mastercard.png" alt=" master">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-li mx-1">
+                        <img src="/assets/cards/express.png" alt=" express">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-dribbble mx-1">
+                        <img src="/assets/cards/discover.png" alt=" discover">
+                    </a>
+                </li>
+            </ul>
+            <!-- Social buttons -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+                Copyright © 2017 Colorlib. All rights reserved.
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+    </footer>
+    </div>
+    </section>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- <script>
+        $('.products div img').hover(function () {
+            $(this).next().css({
+                'display': 'block'
+            });
+            $(this).next().toggleClass("animated slideInUp");
+        });
+
+        $('.products div img').mouseout(function () {
+            $(this).next().toggleClass("animated slideOutDown");
+        });
+    </script> -->
+
+
+    <!-- <script>
+        $('.btn').click(function () {
+            let src = $(this).prev().attr('src')
+            localStorage.clear();
+            localStorage.setItem('src', src)
+            swal("Good Job!", $(this).next().text(), "success");
+        })
+    </script> -->
+
+    <!-- <script>
+        for (let i in localStorage) {
+            let z = localStorage.getItem(i);
+            let d = JSON.parse(z);
+            if (d != null) {
+                console.log(d.src);
+            }
+        }
+    </script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script>
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [75, 300],
+                slide: function (event, ui) {
+                    $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                }
+            });
+            $("#amount").val("$" + $("#slider-range").slider("values", 0) +
+                " - $" + $("#slider-range").slider("values", 1));
+        });
+    </script> -->
+</body>
+
+</html>

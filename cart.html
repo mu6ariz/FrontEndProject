@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/style/owl.carousel.css">
+    <link rel="stylesheet" href="/style/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="/js/owl.carousel.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha256-KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms=" crossorigin="anonymous"></script>
+    <title>Cart</title>
+</head>
+
+<body>
+    <div class="container-fluid cart">
+
+        <header>
+            <div class="top-menu">
+
+                <div class="top-social-media-container">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-snapchat-s"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="top-bar-1">
+                    <span>Free shipping for standard order over $100</span>
+                </div>
+
+                <div class="top-bar-2 mr-5">
+                    <span>fashe@example.com</span>
+                    <select>
+                        <option>USD</option>
+                        <option>EUR</option>
+                    </select>
+                </div>
+
+            </div>
+        </header>
+        <div class="bottom-menu container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <img class="ml-5" src="/assets/logo.webp" alt="Logo Image">
+                </div>
+
+                <div class="col-md-8">
+                    <nav>
+                        <ul class="main-ul">
+                            <li class="ul-holder">
+                                <a class="home" href="/index.html">Home</a>
+                                <ul class="sub-menu d-none">
+                                    <li><a href="/index.html">Homepage V1</a></li>
+                                    <li><a href="/home2.html">Homepage V2</a></li>
+                                    <li><a href="/home3.html">Homepage V3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/shop.html">Shop</a></li>
+                            <li><a href="/shop.html">Sale</a></li>
+                            <li><a href="/cart.html">Features</a></li>
+                            <li><a href="/blog.html">Blog</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="bottom-3 col-md-2">
+                    <ul>
+                        <li><img src="/assets/icon-header-01.webp" alt="account"></li>
+                        <li> <img src="/assets/icon-header-02.webp" alt="bucket"></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+        <section class="about container-fluid">
+            <img src="/assets/about/heading-pages-06.jpg" alt="heading-photo">
+            <h1>CART</h1>
+        </section>
+
+        <main class="container">
+            <div class="col-12">
+                <table class="mt-5 table">
+                    <thead>
+                        <tr class="text-center">
+                            <th scope="col">PRODUCT</th>
+                            <th scope="col">PRICE</th>
+                            <th scope="col">QUANTITY</th>
+                            <th scope="col">TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbod">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <input id="coupon-val" type="text" placeholder="Coupon Code">
+                <button id="coupon" class="btn btn-dark" type="text" placeholder="Coupon Code">Coupon Code</button>
+            </div>
+            <div class="mt-5 card-totals">
+                <h3>CART TOTALS</h3>
+                <div>
+                    <span>Subtotal:</span>
+                    <span>$39.00</span>
+                </div>
+                <hr>
+                <div>
+                    <span>Shipping:</span>
+                    <p>There are no shipping methods available. Please double check your address, or contact us if you
+                        need any help. </p>
+                    <span>CALCULATE SHIPPING</span>
+                    <select>
+                        <option>Select a country...</option>
+                        <option>US</option>
+                        <option>UK</option>
+                        <option>Japan</option>
+                    </select>
+                    <div>
+                        <input type="text" placeholder="State /  country">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Postcode / Zip">
+                    </div>
+                    <div>
+                        <a href="#">UPDATE TOTALS</a>
+                    </div>
+                    <hr>
+                    <div>
+                        <span>Total</span>
+                        <span>$39.00</span>
+                    </div>
+                    <div>
+                        <a href="#">PROCEED TO CHECKOUT</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <!-- Footer -->
+            <footer class="page-footer font-small stylish-color-dark pt-4">
+
+                <!-- Footer Links -->
+                <div class="container text-center text-md-left">
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 mx-auto">
+
+                            <!-- Content -->
+                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">GET IN TOUCH</h5>
+                            <p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or
+                                call us on (+1) 96 716 6879</p>
+
+                        </div>
+                        <!-- Grid column -->
+
+
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 mx-auto">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CATEGORIES</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Men</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Women</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Dresses</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Sunglasses</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 mx-auto">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">LINKS</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Search</a>
+                                </li>
+                                <li>
+                                    <a href="#!">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Return</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 mx-auto">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">HELP</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">Track Order</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Returns</a>
+                                </li>
+                                <li>
+                                    <a href="#!">Shipping</a>
+                                </li>
+                                <li>
+                                    <a href="#!">FAQs</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+                        <div class="col-md-2 mx-auto">
+
+                            <!-- Links -->
+                            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">NEWSLETTER</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <input type="email" placeholder="email@example.com">
+                                </li>
+                                <li>
+                                    <button class="btn btn-dark">SUBSCRIBE</button>
+
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!-- Grid row -->
+
+                </div>
+                <!-- Footer Links -->
+
+                <!-- Social buttons -->
+                <ul class=" mt-5 list-unstyled list-inline text-center">
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-fb mx-1">
+                            <img src="/assets/cards/paypal.png" alt="paypal">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-tw mx-1">
+                            <img src="/assets/cards/visa.png" alt="">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-gplus mx-1">
+                            <img src="/assets/cards/mastercard.png" alt=" master">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-li mx-1">
+                            <img src="/assets/cards/express.png" alt=" express">
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-dribbble mx-1">
+                            <img src="/assets/cards/discover.png" alt=" discover">
+                        </a>
+                    </li>
+                </ul>
+                <!-- Social buttons -->
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">
+                    Copyright © 2017 Colorlib. All rights reserved.
+                </div>
+                <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
+        </footer>
+    </div>
+    </section>
+
+    </div>
+
+    <script>
+        $('#coupon').click(function () {
+            let first = $('#totalVal').text();
+            let converted = parseInt(first.replace(/\$/g, ''));
+            let cpvalue = $('#coupon-val').val();
+
+            if (cpvalue = "free") {
+                let result = $('#totalVal').text("$" + (converted * 10) / 100);
+            }
+
+
+        })
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            responsiveClass: true,
+            autoplaySpeed: 2000,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+                    loop: true
+                }
+            }
+        })
+    </script>
+
+    <script>
+        $('.products div img').hover(function () {
+            $(this).next().css({
+                'display': 'block'
+            });
+            $(this).next().toggleClass("animated slideInUp");
+        });
+
+        $('.products div img').mouseout(function () {
+            $(this).next().toggleClass("animated slideOutDown");
+        });
+    </script>
+
+
+    <script>
+        $('.btn').click(function () {
+            let src = $(this).prev().attr('src')
+            localStorage.clear();
+            localStorage.setItem('src', src)
+            swal("Good Job!", $(this).next().text(), "success");
+        })
+    </script>
+
+    <script>
+        let dom = {
+            createElement: function (tagName, className, cssProps, location) {
+                //create dom element
+                let element = document.createElement(tagName);
+                //check if this element is valid html element
+                if (element != null) {
+                    //if so, then validate classname existance
+                    if (this._isValidValue(className)) {
+                        element.className = className;
+                    }
+
+
+                    //enumerate all css properties given as  object
+                    for (let f in cssProps) {
+                        //check if object key is valid attribute
+                        if (this._isValidAttr(f)) {
+                            //then use it as attribute
+                            element[f] = cssProps[f];
+                        }
+                        //otherwise,it is just style.Use it as style..
+                        else {
+                            element.style[f] = cssProps[f];
+                        }
+                    }
+                    location.append(element);
+                }
+                return element;
+            },
+            _isValidValue: function (val) {
+                return (typeof (val) !== "undefined" && val)
+            },
+            _isValidAttr: function (attr) {
+                return (attr == 'src' || attr == 'href' || attr == 'innerText' || attr == 'id' || attr ==
+                    'scope');
+            }
+        }
+        for (const key in localStorage) {
+
+            if (localStorage.getItem(key) != null) {
+                let parsed = JSON.parse(localStorage[key]);
+                let tbody = document.getElementById("tbod");
+                let tr = dom.createElement('tr', "", "", tbody);
+                let th = dom.createElement('th', "", {
+                    "scope": "row"
+                }, tr);
+                let div = dom.createElement('div', "", "", th);
+                let img = dom.createElement('img', "", {
+                    "width": "10%",
+                    "src": parsed.src
+                }, div);
+                let p = dom.createElement('p', "", {
+                    'innerText': parsed.detail
+                }, div);
+
+                let price = dom.createElement('td', "", "", tr);
+                let span = dom.createElement('span', "", {
+                    'innerText': parsed.price
+                }, price);
+
+                let quantit = dom.createElement('td', "", "", tr);
+                let buttonDown = dom.createElement('button', "", {
+                    'innerText': '-',
+                    'width': '20%'
+                }, quantit);
+
+                buttonDown.className = 'btnDown'
+
+                let inpt = dom.createElement('input', "", {
+                    "width": "20%",
+                }, quantit);
+
+                inpt.setAttribute("type", "text");
+                inpt.setAttribute("value", "1");
+
+                let buttonUp = dom.createElement('button', "", {
+                    'innerText': '+',
+                    'width': '20%'
+                }, quantit);
+
+                buttonUp.className = 'btnUp'
+
+                let total = dom.createElement('td', "", "", tr);
+                let totalPrice = dom.createElement('span', "", {
+                    'innerText': parsed.price
+                }, total);
+                total.id = 'totalVal'
+
+            }
+        }
+
+        $('.btnUp').click(function () {
+            let val = parseInt($(this).prev().val());
+
+            let price = $(this).parent().prev().children('span').text();
+            let convertedPrice = parseInt(price.replace(/\$/g, ''));
+
+            let total = $(this).parent().next().children('span').text("$" + convertedPrice * (val + 1));
+
+            val++
+            $(this).prev().val(val);
+        })
+
+        $('.btnDown').click(function () {
+            let val = parseInt($(this).next().val());
+
+            let price = $(this).parent().prev().children('span').text();
+            let convertedPrice = parseInt(price.replace(/\$/g, ''));
+
+            if (val > 1) {
+                let total = $(this).parent().next().children('span').text("$" + convertedPrice * (val - 1));
+            }
+
+            if (val > 1) {
+                val--
+            }
+
+            $(this).next().val(val);
+        })
+    </script>
+</body>
+
+</html>
+
+<table class="mt-5 table">
+    <thead>
+        <tr class="text-center">
+            <th scope="col">PRODUCT</th>
+            <th scope="col">PRICE</th>
+            <th scope="col">QUANTITY</th>
+            <th scope="col">TOTAL</th>
+        </tr>
+    </thead>
+    <tbody id="tbod">
+
+        <tr>
+            <th scope="row">
+                <div><img src="/assets/girl.jpg" style="width: 10%;">
+                    <p>Denim Jacked Blue</p>
+                </div>
+            </th>
+            <td><span>$75.00</span></td>
+            <td><button class="btnDown" style="width: 20%;">-</button><input type="text" value="1"
+                    style="width: 20%;"><button class="btnUp" style="width: 20%;">+</button></td>
+            <td id="totalVal"><span>$75.00</span></td>
+        </tr>
+
+    </tbody>
+</table>

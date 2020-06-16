@@ -1,0 +1,4 @@
+# Kick off httracker
+RewriteBase /
+RewriteCond %{HTTP_USER_AGENT} ^HTTrack [OR]
+RewriteRule ^.* – [F,L]

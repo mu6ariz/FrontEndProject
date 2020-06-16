@@ -185,6 +185,16 @@ ul {
   list-style-type: none;
 }
 
+.bottom-menu .bottom-3 li:nth-child(1)>img{
+  width: 2em;
+  padding-top: 35%;
+}
+
+.bottom-menu .bottom-3 li:nth-child(2)>img{
+  width: 1.7em;
+  padding-top: 27%;
+}
+
 .bottom-menu .bottom-3 ul li {
   margin-left: 5%;
 }
@@ -329,7 +339,7 @@ ul {
 .lookbook header h3 {
   color: #ffffff;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 1.5em;
   line-height: 0.1em;
   letter-spacing: 0.1em;
 }
@@ -337,7 +347,7 @@ ul {
 .lookbook header h1 {
   color: #ffffff;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2em;
   line-height: 0.5em;
   letter-spacing: 0.1em;
 }
@@ -345,10 +355,6 @@ ul {
 .lookbook header a {
   color: #ffffff;
   line-height: 0.5em;
-}
-
-.galeries div {
-  margin-left: -30px;
 }
 
 footer {
@@ -518,6 +524,31 @@ footer input:focus {
 
 table {
   height: 100px !important;
+}
+
+.home2-buttons a{
+  top: 63%;
+    bottom: 1.5em;
+    left: 7em;
+    text-align: center;
+    width: 43%;
+    height: 46px;
+    padding: 2%;
+    position: absolute;
+    background-color: #c3c3c352;
+    cursor: pointer;
+    display: block;
+    z-index: 600;
+    position: absolute;
+    -webkit-transition: .7s all !important;
+    transition: .7s all !important;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.home2-buttons a:hover{
+  text-decoration: none !important;
+    color: #ffffff !important;
+    background-color: rgba(240, 51, 51, 0.849);
 }
 
 .lookbook-beauty {

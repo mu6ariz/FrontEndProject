@@ -73,6 +73,12 @@ ul {
   transition: .7s all;
 }
 
+.btn-contacter{
+  border: none;
+    padding: 2%;
+    width: 19%;
+}
+
 .btn-contact:hover {
   background-color: #FF5337;
   border: none;
@@ -185,9 +191,9 @@ ul {
   list-style-type: none;
 }
 
-.bottom-menu .bottom-3 li:nth-child(1)>img{
-  width: 2em;
-  padding-top: 35%;
+.bottom-menu .bottom-3 li:nth-child(1) img{
+  width: 1.6em;
+  padding-top: 32%;
 }
 
 .bottom-menu .bottom-3 li:nth-child(2)>img{
@@ -1033,7 +1039,7 @@ tbody div {
 }
 
 tbody div img {
-  width: 12% !important;
+  width: 79% !important;
 }
 
 tbody div p {
